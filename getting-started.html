@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#0052D4">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Raleway:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/idea.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>KSML</title>
+    <script>
+      //- Picture element HTML5 shiv
+      document.createElement( 'picture' );
+    </script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async=""></script>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container header__container"><a class="header__logo" href="/"><img src="assets/img/logo.svg" alt="KSML"></a>
+        <div class="header__nav">
+          <nav class="menu"> <a class="menu__link" href="#">Overview</a><a class="menu__link" href="getting-started.html">Getting Started</a><a class="menu__link" href="https://axual.github.io/ksml/">Documentation</a></nav>
+        </div>
+        <button class="header__burger" id="burger" aria-label="Menu button"><svg data-name="menu" viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5 19.469h-33a1.5 1.5 0 010-3h33a1.5 1.5 0 010 3zM34.5 7.969h-33a1.5 1.5 0 010-3h33a1.5 1.5 0 010 3zM34.5 30.969h-33a1.5 1.5 0 010-3h33a1.5 1.5 0 010 3z" fill="#1F2854"/></svg></button>
+      </div>
+    </header>
+    <div id="menu">
+      <button id="burgerClose" aria-label="Close"><svg data-name="close" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.395 30.517L5.061 7.181a1.5 1.5 0 012.121-2.121l23.334 23.334a1.5 1.5 0 01-2.12 2.122z" fill="#1F2854"/><path d="M30.517 7.182L7.181 30.516a1.5 1.5 0 01-2.121-2.12L28.395 5.06a1.5 1.5 0 012.122 2.12z" fill="#1F2854"/></svg></button>
+      <nav class="menu"> <a class="menu__link" href="#">Overview</a><a class="menu__link" href="getting-started.html">Getting Started</a><a class="menu__link" href="https://axual.github.io/ksml/">Documentation</a></nav>
+    </div>
+    <main>
+      <section class="start-promo"><img class="start-promo__bg" src="assets/img/start-promo/start-bg-top.png" alt="bg"><img class="start-promo__bgm" src="assets/img/start-promo/start-bg-top-m.png" alt="bg">
+        <picture class="start-promo__illustration"><img src="assets/img/start-promo/illustration.svg" alt="illustration"></picture>
+        <div class="container"> 
+          <div class="start-promo__info"> 
+            <h1 class="start-promo__title">Build your own streaming data pipeline using KSML</h1>
+            <p class="p3">Step-by-step guide of setting up the runtime and building your own streaming data pipeline</p>
+            <div class="start-promo__btns"><a class="btn btn_gradient" href="#"> <span>Learn More</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-build"> 
+        <div class="start-build__box">
+          <div class="container start-build__box-wrap"> 
+            <div class="start-build__illustration"> <img src="assets/img/start-build/illustration.svg" alt="What you will build"></div>
+            <div class="start-build__info">
+              <div class="start-build__info-icon blue">
+                 <svg data-name="modular" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.929 23.36l-3.072 5.32 2.784 4.822a.996.996 0 00.863.498h4.992c.356 0 .685-.19.863-.498l2.784-4.822-3.072-5.32H13.93zM16.004 12.632v1.858l-.292-.292a.996.996 0 00-1.409 1.409l1.993 1.992a.996.996 0 001.408 0l1.992-1.992a.996.996 0 10-1.408-1.409l-.292.292v-1.858h-1.992zM13.641 10.141a.996.996 0 00.863.498h4.992c.356 0 .685-.19.863-.498l2.496-4.323a.996.996 0 000-.996L20.36.498A.996.996 0 0019.496 0h-4.992a.996.996 0 00-.863.498l-2.496 4.324a.996.996 0 000 .996l2.496 4.323zM33.794 21.867l-2.496-4.324a.996.996 0 00-.863-.498h-4.992a.996.996 0 00-.863.498l-2.783 4.822 3.07 5.32h5.568c.356 0 .685-.19.863-.499l2.496-4.323a.996.996 0 000-.996zM9.42 17.543a.996.996 0 00-.863-.498H3.565a.996.996 0 00-.863.498L.206 21.867a.996.996 0 000 .996l2.496 4.323a.996.996 0 00.863.498h5.567l3.072-5.32-2.784-4.82z" fill="#fff"/></svg></div>
+              <h2>What you will build</h2>
+              <p class="p1">You will build an app to do stream processing on fictional sensor data (temperature, humidity, light). Sensor data is generated for you using a simulator. Your job is to do stream processing in a low-code way using KSML. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-need">
+        <div class="container"> 
+          <h2 class="start-need__title">What you need</h2>
+          <div class="start-need__items"> 
+            <div class="start-need__elem"> 
+              <div class="start-need__elem-box"> 
+                <div class="start-need__elem-icon blue"><svg data-name="clock" width="34" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#prefix__clip0)"><path d="M17 .5C7.626.5 0 8.126 0 17.5c0 9.374 7.626 17 17 17 9.374 0 17-7.626 17-17 0-9.374-7.626-17-17-17zm8.085 25.793a1.413 1.413 0 01-2.003 0l-7.084-7.083a1.41 1.41 0 01-.415-1.002V9a1.416 1.416 0 112.834 0v8.622l6.668 6.668c.554.554.554 1.45 0 2.003z" fill="#fff"/></g><defs><clipPath id="prefix__clip0"><path fill="#fff" transform="translate(0 .5)" d="M0 0h34v34H0z"/></clipPath></defs></svg></div>
+                <p class="p1">15 minutes of your time</p>
+              </div>
+            </div>
+            <div class="start-need__elem"> 
+              <div class="start-need__elem-box">
+                <div class="start-need__elem-icon green"><svg data-name="code" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#prefix__clip0)" fill="#fff"><path d="M16.06 16.846a.717.717 0 00-.21-.507L4.103 4.594a.717.717 0 00-1.014 0L.21 7.472a.716.716 0 000 1.014l8.36 8.36-8.36 8.36a.718.718 0 000 1.015l2.879 2.878a.714.714 0 001.014 0L15.85 17.353a.714.714 0 00.21-.507zM33.283 25.03H15.051a.717.717 0 00-.717.716V28.9c0 .396.32.717.717.717h18.232A.717.717 0 0034 28.9v-3.154a.717.717 0 00-.717-.717z"/></g><defs><clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h34v34H0z"/></clipPath></defs></svg></div>
+                <p class="p1">Your favorite Editor</p>
+              </div>
+            </div>
+            <div class="start-need__elem"> 
+              <div class="start-need__elem-box">
+                <div class="start-need__elem-icon orange"><svg data-name="docker" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.763 21.336h-3.895v-3.5h3.895v3.5zm0-12.038h-3.895v3.576h3.895V9.298zm4.608 8.532h-3.895v3.5h3.895v-3.5zm-9.21-4.248h-3.895v3.541h3.895v-3.541zm4.602 0h-3.895v3.541h3.895v-3.541zm16.31 5.892c-.848-.572-2.804-.778-4.307-.495-.194-1.414-.984-2.646-2.422-3.753l-.825-.548-.548.825c-1.084 1.638-1.378 4.336-.218 6.116-.512.277-1.52.654-2.852.63H3.287c-.513 2.994.342 6.883 2.592 9.552 2.187 2.587 5.463 3.9 9.747 3.9 9.274 0 16.14-4.271 19.35-12.032 1.261.026 3.984.007 5.38-2.663.089-.147.39-.778.501-1.007l-.784-.525zM9.957 17.83H6.068v3.5h3.895v-3.5h-.006zm4.602 0h-3.895v3.5h3.895v-3.5zm4.602 0h-3.895v3.5h3.895v-3.5zm-4.602-4.248h-3.895v3.541h3.895v-3.541z" fill="#fff"/></svg></div>
+                <p class="p1">Docker 19.x</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-complete"> 
+        <div class="container"> 
+          <h2 class="start-complete__title">How to complete this getting started</h2>
+          <div class="start-complete__wrap"> 
+            <div class="start-complete__box"> 
+              <picture> <img src="assets/img/start-complete/opt-1.png" alt="Option 1"><span>Option 1</span></picture>
+              <p class="p1">Start from scratch and follow along with the examples below. This is the most educational and fun. Move on to "<a href="#" class="simple">Step 1: adding dependencies</a>"</p>
+            </div>
+            <div class="start-complete__box"> 
+              <picture> <img src="assets/img/start-complete/opt-2.png" alt="Option 2"><span>Option 2</span></picture>
+              <p class="p1">Clone the complete project onto your machine. For detailed intructions, please refer to <this git repo> and check the <a href="#" class="simple">README.md</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-step1">
+        <div class="container">
+          <div class="start-step1__wrap">
+            <div class="start-step1__half">
+              <div class="step">Step 1</div>
+              <h2 class="start-step1__title">Start a local Kafka environment + data generator</h2>
+              <ul>
+                <li>
+                  <p class="p1">Create a `docker-compose.yml` which starts a Kafka environment locally bootstrapped with some topics with the following contents, or &lt;download it here&gt;</p>
+                </li>
+                <li>
+                  <p class="p1">Perform a `docker-compose up` to start the environment</p>
+                  <p class="p1">By looking at your console you should see the data generator in action, you should see messages like "blahblabh".</p>
+                </li>
+              </ul>
+            </div>
+            <div class="start-step1__half">
+                            <div class="code"> 
+                              <div class="code__box">
+                                <pre> <code class="language-apache">
+                                    <pre>version: "2.1"
+services:
+# Run mvn package for apache-avro-schema-example to use the schema streams
+
+    standalone:
+    image: axual/platform-test-standalone:5.7.0
+    hostname: standalone
+    ports:
+        --set "8080-8081:8080-8081"
+        --set "8082-8084:8082-8084"
+    volumes:
+        -./ksml-examples/ksml-demo-producer/target/:/axtra
+        -./ksml-examples/axual-standalone-configs:/configs
+    environment:
+        -Loader_Path=/extra,/configs
+        -Spring_Profiles_active=demo</pre></code></pre>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-step2">
+        <div class="container"> 
+          <div class="start-step2__wrap">
+            <div class="start-step2__half">
+              <div class="exemple">Example for maven</div>
+                    <div class="code small"> 
+                      <div class="code__box">
+                        <pre> <code class="xml">
+                            <pre>&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.kafla&lt;/groupId&gt;
+    &lt;artifactId&gt;kafka-streams&lt;/artifactId&gt;
+    &lt;version&gt;2.7.0&lt;/version&gt;
+&lt;/dependency&gt;</pre></code></pre>
+                      </div>
+                    </div>
+                    <div class="code small"> 
+                      <div class="code__box">
+                        <pre> <code class="xml">
+                            <pre>&lt;dependency&gt;
+    &lt;groupId&gt;io.axual.ksml&lt;/groupId&gt;
+    &lt;artifactId&gt;ksml&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1&lt;/version&gt;
+&lt;/dependency&gt;</pre></code></pre>
+                      </div>
+                    </div>
+            </div>
+            <div class="start-step2__half">
+              <div class="step">Step 2</div>
+              <h2 class="start-step2__title">Build your KSML project</h2>
+              <p class="p1">Create a new maven project yourself using your IDE or &lt;use our archetype&gt; </p>
+              <ul> 
+                <li> 
+                  <p class="p1">Add dependencies on the latest Kafka Streams libraries and KSML to load the necessary libraries.</p>
+                  <p class="p1">Alternative: <br> using an archetype</p>
+                        <div class="code small"> 
+                          <div class="code__box">
+                            <pre> <code class="apache">
+                                <pre>mvn archetype:generate
+-DarchetypeGroupId=&lt;archetype-groupId&gt;
+-DarchetypeArtifactId=&lt;archetype-artifactId&gt;
+-DarchetypeVersion=&lt;archetype-version&gt;
+-DgroupId=&lt;my.groupId&gt;
+-DartifactId=&lt;my-artifactId&gt;</pre></code></pre>
+                          </div>
+                        </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-step3">
+        <div class="container"> 
+          <div class="start-step3__wrap">
+            <div class="start-step3__half">
+              <div class="step">Step 3</div>
+              <h2 class="start-step3__title">Build your KSML definitions</h2>
+              <p class="p1">The next step is to build a KSML definition that is going to process the data. Below you will find 3 simple examples that help you to understand the KSML syntax better and see what it is capable of.</p>
+              <div class="exemple">Example 1</div>
+              <h3>Inspecting topic data</h3>
+              <p class="p1">Create a file "example1.yml" in the folder `/src/main/resources` with the following contents</p>
+            </div>
+            <div class="start-step3__half">
+                            <div class="code"> 
+                              <div class="code__box">
+                                <pre> <code class="language-apache">
+                                    <pre>streams:
+    topic: ksml_sensordata_avro
+    keyType: string
+    valueType: avro:SensorData
+
+functions:
+    print_message:
+        type: forEach
+        code: "print('key='+(key if isinstance(key,str) else str(key))+', value='+(value if isinstance(value,str) else str(value)))"
+
+pipelines:
+    main:
+          from: ksml_sensordata_avro
+          forEach: print_message</pre></code></pre>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-step4">
+        <div class="container"> 
+          <div class="start-step4__wrap">
+            <div class="start-step4__half">
+                            <div class="code"> 
+                              <div class="code__box">
+                                <pre> <code class="language-apache">
+                                    <pre>streams:
+    topic: ksml_sensordata_avro
+    keyType: string
+    valueType: avro:SensorData
+
+functions:
+    print_message:
+        type: forEach
+        code: "print('key='+(key if isinstance(key,str) else str(key))+', value='+(value if isinstance(value,str) else str(value)))"
+
+pipelines:
+    main:
+        from: ksml_sensordata_avro
+        forEach: print_message</pre></code></pre>
+                              </div>
+                            </div>
+            </div>
+            <div class="start-step4__half">
+              <div class="step">Step 4</div>
+              <h2 class="start-step4__title">Launch your KSML app</h2>
+              <p class="p1">Start your app. If everything goes well, you should see the AVRO sensordata being written to STDOUT. This tells you that your KSML pipeline "xxxx" is running fine.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-step5">
+        <div class="container">
+          <div class="start-step5__top">
+            <div class="step">Step 5</div>
+            <h2 class="start-step5__title">Try out more examples</h2>
+            <p class="p1">Now that your setup works fine and you have successfully launched the first KSML app, let's add some more. In the llist below you will find some example definitions for various operations. Click "expand" to see the code for every example and repeat "step 3" for each of them.</p>
+          </div>
+          <div class="start-step5__wrap">
+            <div class="start-step5__half">
+              <div class="exemple">Example 2: </div>
+              <h3>Dynamic topic routing &lt;expand/collapse&gt;</h3>
+                    <div class="code"> 
+                      <div class="code__box">
+                        <pre> <code class="language-apache">
+                            <pre>streams:
+    topic: ksml_sensordata_avro
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_filtered
+    keyType: string
+    valueType: avro:SensorData
+
+functions:
+    print_message:
+        type: forEach
+        code: "print('key='+(key if isinstance(key,str) else str(key))+', value='+(value if isinstance(value,str) else str(value)))"
+
+    filter_message:
+        type: predicate</pre></code></pre>
+                      </div>
+                    </div>
+            </div>
+            <div class="start-step5__half">
+              <div class="exemple">Example 3: </div>
+              <h3>Filtering topic data &lt;expand/collapse&gt;</h3>
+                    <div class="code"> 
+                      <div class="code__box">
+                        <pre> <code class="language-apache">
+                            <pre>streams:
+    topic: ksml_sensordata_avro
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_sensor0
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_sensor1
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_sensor2
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_sensor3
+    keyType: string
+    valueType: avro:SensorData
+    topic: ksml_sensordata_sensor4
+
+functions:
+    print_message:
+        type: forEach</pre></code></pre>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-learn"> 
+        <div class="container">
+          <div class="start-learn__top">
+            <h2 class="start-learn__title">Want to learn more?</h2>
+            <p class="p1">Did you get the hang of it? <br> Want to know more what KSML is capable of? </p>
+          </div>
+          <div class="start-learn__wrap"> 
+            <div class="start-learn__elem"> 
+              <div class="start-learn__elem-box">
+                <div class="start-learn__elem-icon blue"><svg data-name="clock" width="34" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#prefix__clip0)"><path d="M17 .5C7.626.5 0 8.126 0 17.5c0 9.374 7.626 17 17 17 9.374 0 17-7.626 17-17 0-9.374-7.626-17-17-17zm8.085 25.793a1.413 1.413 0 01-2.003 0l-7.084-7.083a1.41 1.41 0 01-.415-1.002V9a1.416 1.416 0 112.834 0v8.622l6.668 6.668c.554.554.554 1.45 0 2.003z" fill="#fff"/></g><defs><clipPath id="prefix__clip0"><path fill="#fff" transform="translate(0 .5)" d="M0 0h34v34H0z"/></clipPath></defs></svg></div>
+                <p class="p1">Check our &lt;project documentation&gt;</p><a class="start-learn__elem-link icon-link" href="#">
+                   Learn More<svg dat-name="arrow" width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.354 4.354a.5.5 0 000-.708L27.172.464a.5.5 0 10-.707.708L29.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h30v-1H0v1z" /></svg></a>
+              </div>
+            </div>
+            <div class="start-learn__elem">
+              <div class="start-learn__elem-box">
+                <div class="start-learn__elem-icon yellow"><svg data-name="code" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#prefix__clip0)" fill="#fff"><path d="M16.06 16.846a.717.717 0 00-.21-.507L4.103 4.594a.717.717 0 00-1.014 0L.21 7.472a.716.716 0 000 1.014l8.36 8.36-8.36 8.36a.718.718 0 000 1.015l2.879 2.878a.714.714 0 001.014 0L15.85 17.353a.714.714 0 00.21-.507zM33.283 25.03H15.051a.717.717 0 00-.717.716V28.9c0 .396.32.717.717.717h18.232A.717.717 0 0034 28.9v-3.154a.717.717 0 00-.717-.717z"/></g><defs><clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h34v34H0z"/></clipPath></defs></svg></div>
+                <p class="p1">Check the &lt;project source code&gt; and &lt;contribute&gt; if you like</p><a class="start-learn__elem-link icon-link" href="#">
+                   Learn More<svg dat-name="arrow" width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.354 4.354a.5.5 0 000-.708L27.172.464a.5.5 0 10-.707.708L29.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h30v-1H0v1z" /></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap"> 
+          <div class="footer__top"><a class="footer__logo" href="/"><img src="assets/img/logo.svg" alt="KSML"></a>
+            <div class="footer__nav">
+              <nav class="menu"> <a class="menu__link" href="#">Overview</a><a class="menu__link" href="getting-started.html">Getting Started</a><a class="menu__link" href="https://axual.github.io/ksml/">Documentation</a></nav>
+            </div>
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item"><a href="#" title="facebook" target="_blank"><svg data-name="fb" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.826 3.327H7.76V.47H5.487v.01C2.733.58 2.169 2.127 2.119 3.752h-.005v1.426H.239v2.797h1.875v7.496h2.825V7.975h2.315l.447-2.797h-2.76v-.861c0-.55.365-.99.885-.99z"/></svg></a></li>
+                <li class="socials__item"><a href="#" title="linkein" target="_blank"><svg data-name="in" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.452 13.61h2.81V4.248H.451v9.362zm10.943-9.686c-1.363 0-2.583.498-3.448 1.596V4.217h-2.82v9.393h2.82V8.53c0-1.073.983-2.12 2.215-2.12 1.232 0 1.536 1.047 1.536 2.094v5.105h2.809V8.295c0-3.69-1.748-4.371-3.112-4.371zm-9.551-.612A1.407 1.407 0 101.842.5a1.407 1.407 0 00.002 2.813z"/></svg></a></li>
+                <li class="socials__item"><a href="#" title="youtube" target="_blank"><svg data-name="yt" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.131 9.81L13.011 7 8.13 4.19v5.62zm10.856 1.714c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524A2.35 2.35 0 0017.334.84C15.868.438 10 .438 10 .438s-5.868 0-7.335.386A2.396 2.396 0 001.013 2.49C.627 3.958.627 7 .627 7s0 3.057.386 4.509c.216.803.85 1.436 1.652 1.652 1.483.402 7.335.402 7.335.402s5.867 0 7.334-.387a2.349 2.349 0 001.653-1.652z"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom"> <span class="footer__license">Licensed under Apache License v2</span>
+            <var>|</var><span class="footer__copyright">© 2021 KSML. All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/highlightjs-badge/highlightjs/highlight.pack.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
