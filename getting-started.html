@@ -118,11 +118,13 @@
                   <p class="p1">This file start a Kafka environment with Schema Registry and a data generator for the examples</p>
                 </li>
                 <li>
-                  <p class="p1">Perform a `docker compose up -d` in the root directory to start the environment in the background</p>
+                  <p class="p1">Perform a `docker-compose up -d` in the root directory to start the environment in the background</p>
+                  <p class="p1">Docker has recently introduced an alternative command `docker compose up -d`</p>
                 </li>
               </ul>
             </div>
             <div class="start-step1__half">
+              <div class="exemple">Docker Compose Definition</div>
               <div class="exemple">Docker Compose Definition</div>
                 <div class="code">
                   <div class="code__box">
@@ -250,7 +252,7 @@ services:
               <div class="code small">
                 <div class="code__box">
                   <pre> <code class="language-bash">
-                    <pre>docker compose logs -f example-producer</pre>
+                    <pre>docker-compose logs -f example-producer</pre>
                   </code></pre>
                 </div>
               </div>
@@ -260,8 +262,9 @@ services:
               <h2 class="start-step2__title">Verify that the data generator is running</h2>
               <ul>
                 <li>
-                  <p class="p1">Perform a `docker compose logs -d example-producer`. By looking at your console you should see the data generator in action, you should see produce messages appear.</p>
+                  <p class="p1">Perform a `docker-compose logs -d example-producer`. By looking at your console you should see the data generator in action, you should see produce messages appear.</p>
                   <p class="p1">The service can fail several times while waiting for the Kafka topics to be created.</p>
+                  <p class="p1">Docker has recently introduced an alternative command `docker compose logs -d example-producer`</p>
                 </li>
               </ul>
               <div class="code">
@@ -296,9 +299,10 @@ example-producer_1  | 2021-05-11T09:55:02,682Z [system] [main] INFO  i.a.k.e.pro
             <div class="start-step3__half">
               <div class="exemple">examples/sensor-inspect.yaml</div>
               <div class="code">
-                              <div class="code__box">
-                                <pre> <code class="language-apache">
-                                    <pre>streams:
+                <div class="code__box">
+                  <pre> <code class="language-apache">
+                      <pre>
+streams:
     topic: ksml_sensordata_avro
     keyType: string
     valueType: avro:SensorData
@@ -311,9 +315,10 @@ functions:
 pipelines:
     main:
           from: ksml_sensordata_avro
-          forEach: print_message</pre></code></pre>
-                              </div>
-                            </div>
+          forEach: print_message</pre>
+                  </code></pre>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -324,10 +329,10 @@ pipelines:
           <div class="start-step4__wrap">
             <div class="start-step4__half">
               <div class="exemple">examples/ksml-runner.yml</div>
-                            <div class="code">
-                              <div class="code__box">
-                                <pre> <code class="language-apache">
-                                    <pre>
+                <div class="code">
+                  <div class="code__box">
+                    <pre> <code class="language-apache">
+                      <pre>
 ksml:
   workingDirectory: /ksml
   definitions:
@@ -340,9 +345,11 @@ backend:
     applicationId: io.ksml.example.processor
     schemaRegistryUrl: http://schema_registry:8081
     streamsConfig:
-      acks: all</pre></code></pre>
-                              </div>
-                            </div>
+      acks: all
+                      </pre>
+                    </code></pre>
+                  </div>
+                </div>
             </div>
             <div class="start-step4__half">
               <div class="step">Step 5</div>
@@ -375,10 +382,10 @@ backend:
             <div class="start-step5__half">
               <div class="exemple">Example 2: </div>
               <h3>Dynamic topic routing</h3>
-                    <div class="code">
-                      <div class="code__box">
-                        <pre> <code class="language-apache">
-                            <pre>
+                <div class="code">
+                  <div class="code__box">
+                    <pre> <code class="language-apache">
+                      <pre>
 streams:
   - topic: ksml_sensordata_avro
     keyType: string
@@ -412,18 +419,18 @@ pipelines:
           return 'ksml_sensordata_sensor2'
         else:
           return 'ksml_sensordata_sensor0'
-                            </pre></code></pre>
-                      </div>
-                    </div>
-            </div>
-            <div class="start-step5__half">
-              <div class="exemple">Example 3: </div>
-              <h3>Filtering topic data</h3>
-                    <div class="code">
-                      <div class="code__box">
-                        <pre> <code class="language-apache">
-                            <pre>
-
+                      </pre>
+                    </code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="start-step5__half">
+                <div class="exemple">Example 3: </div>
+                <h3>Filtering topic data</h3>
+                  <div class="code">
+                    <div class="code__box">
+                      <pre> <code class="language-apache">
+                        <pre>
 streams:
   - topic: ksml_sensordata_avro
     keyType: string
@@ -449,10 +456,10 @@ pipelines:
         predicate: filter_message
       - type: peek
         forEach: print_message
-    to: ksml_sensordata_filtered
-                            </pre></code></pre>
-                      </div>
-                    </div>
+    to: ksml_sensordata_filtered</pre>
+                    </code></pre>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
