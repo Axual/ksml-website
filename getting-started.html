@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,11 +80,11 @@
           </div>
         </div>
       </section>
-      <section class="start-complete">
+      <section class="start-step2">
         <div class="container">
           <div class="start-step2__wrap">
             <div class="start-step2__half">
-              <img src="assets/img/start-complete/GitHub.png" alt="GitHub project landing page">
+                  <img src="assets/img/start-complete/github_light.png" alt="GitHub project landing page" style="padding: 48px 51px 64px;">
             </div>
             <div class="start-step2__half">
               <div class="step">Step 1</div>
@@ -123,10 +123,11 @@
               </ul>
             </div>
             <div class="start-step1__half">
-                            <div class="code">
-                              <div class="code__box">
-                                <pre> <code class="language-apache">
-                                    <pre>version: "2"
+              <div class="exemple">Docker Compose Definition</div>
+                <div class="code">
+                  <div class="code__box">
+                    <pre> <code class="language-apache">
+                        <pre>version: "2"
 services:
 # Services can be reached from the local machine and in the docker network
 # From the host machine:
@@ -234,9 +235,9 @@ services:
       - broker
       - schema_registry
       - kafka-setup
-                                    </pre></code></pre>
-                              </div>
-                            </div>
+                  </pre></code></pre>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -246,12 +247,13 @@ services:
           <div class="start-step2__wrap">
             <div class="start-step2__half">
               <div class="exemple">Verify datageneration</div>
-                    <div class="code small">
-                      <div class="code__box">
-                        <pre> <code class="language-bash"><pre>docker compose logs -f example-producer
-                      </pre></code></pre>
-                      </div>
-                    </div>
+              <div class="code small">
+                <div class="code__box">
+                  <pre> <code class="language-bash">
+                    <pre>docker compose logs -f example-producer</pre>
+                  </code></pre>
+                </div>
+              </div>
             </div>
             <div class="start-step2__half">
               <div class="step">Step 3</div>
@@ -372,7 +374,7 @@ backend:
           <div class="start-step5__wrap">
             <div class="start-step5__half">
               <div class="exemple">Example 2: </div>
-              <h3>Dynamic topic routing &lt;expand/collapse&gt;</h3>
+              <h3>Dynamic topic routing</h3>
                     <div class="code">
                       <div class="code__box">
                         <pre> <code class="language-apache">
@@ -416,7 +418,7 @@ pipelines:
             </div>
             <div class="start-step5__half">
               <div class="exemple">Example 3: </div>
-              <h3>Filtering topic data &lt;expand/collapse&gt;</h3>
+              <h3>Filtering topic data</h3>
                     <div class="code">
                       <div class="code__box">
                         <pre> <code class="language-apache">
@@ -487,7 +489,7 @@ pipelines:
             <div class="footer__nav">
               <nav class="menu"> <a class="menu__link" href="index.html">Overview</a><a class="menu__link" href="getting-started.html">Getting Started</a><a class="menu__link" href="https://axual.github.io/ksml/">Documentation</a></nav>
             </div>
-            <div class="footer__socials">
+            <div class="footer__socials" style="visibility: hidden">
               <ul class="socials">
                 <li class="socials__item"><a href="#" title="facebook" target="_blank"><svg data-name="fb" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.826 3.327H7.76V.47H5.487v.01C2.733.58 2.169 2.127 2.119 3.752h-.005v1.426H.239v2.797h1.875v7.496h2.825V7.975h2.315l.447-2.797h-2.76v-.861c0-.55.365-.99.885-.99z"/></svg></a></li>
                 <li class="socials__item"><a href="#" title="linkein" target="_blank"><svg data-name="in" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.452 13.61h2.81V4.248H.451v9.362zm10.943-9.686c-1.363 0-2.583.498-3.448 1.596V4.217h-2.82v9.393h2.82V8.53c0-1.073.983-2.12 2.215-2.12 1.232 0 1.536 1.047 1.536 2.094v5.105h2.809V8.295c0-3.69-1.748-4.371-3.112-4.371zm-9.551-.612A1.407 1.407 0 101.842.5a1.407 1.407 0 00.002 2.813z"/></svg></a></li>
