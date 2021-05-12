@@ -1146,6 +1146,9 @@ button {
       padding: 0;
       top: -30px;
       right: -20px; }
+      @media (max-width: 960px) {
+        .code__box .code-badge {
+          top: -20px; } }
       .code__box .code-badge .code-badge-language {
         display: none; }
 
