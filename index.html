@@ -88,9 +88,9 @@ functions:
     code: "print('key='+(key if isinstance(key,str) else str(key))+', value='+(value if isinstance(value,str) else str(value)))"
 
 pipelines:
-    main:
-      from: ksml_sensordata_avro
-      forEach: print_message</pre>
+  main:
+    from: ksml_sensordata_avro
+    forEach: print_message</pre>
                       </code></pre>
                     </div>
               </div>
