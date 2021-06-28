@@ -303,7 +303,8 @@ example-producer_1  | 2021-05-11T09:55:02,682Z [system] [main] INFO  i.a.k.e.pro
                   <pre> <code class="language-apache">
                       <pre>
 streams:
-  - topic: ksml_sensordata_avro
+  ksml_sensordata_avro:
+    topic: ksml_sensordata_avro
     keyType: string
     valueType: avro:SensorData
 
@@ -387,16 +388,20 @@ backend:
                     <pre> <code class="language-yaml">
                       <pre>
 streams:
-  - topic: ksml_sensordata_avro
+  ksml_sensordata_avro:
+    topic: ksml_sensordata_avro
     keyType: string
     valueType: avro:SensorData
-  - topic: ksml_sensordata_sensor0
+  ksml_sensordata_sensor0:
+    topic: ksml_sensordata_sensor0
     keyType: string
     valueType: avro:SensorData
-  - topic: ksml_sensordata_sensor1
+  ksml_sensordata_sensor1:
+    topic: ksml_sensordata_sensor1
     keyType: string
     valueType: avro:SensorData
-  - topic: ksml_sensordata_sensor2
+  ksml_sensordata_sensor2
+    topic: ksml_sensordata_sensor2
     keyType: string
     valueType: avro:SensorData
 
@@ -432,10 +437,12 @@ pipelines:
                       <pre> <code class="language-yaml">
                         <pre>
 streams:
-  - topic: ksml_sensordata_avro
+  ksml_sensordata_avro:
+    topic: ksml_sensordata_avro
     keyType: string
     valueType: avro:SensorData
-  - topic: ksml_sensordata_filtered
+  ksml_sensordata_filtered:
+    topic: ksml_sensordata_filtered
     keyType: string
     valueType: avro:SensorData
 

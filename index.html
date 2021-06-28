@@ -77,9 +77,10 @@
                       <pre> <code class="language-yaml">
                           <pre>
 streams:
-  topic: ksml_sensordata_avro
-  keyType: string
-  valueType: avro:SensorData
+  ksml_sensordata_avro:
+    topic: ksml_sensordata_avro
+    keyType: string
+    valueType: avro:SensorData
 
 functions:
   print_message:
